@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radeem App - Loading</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading-page">
+        <div class="loading-spinner active"></div>
+        <h1>Radeem App</h1>
+        <p>Authenticating...</p>
+    </div>
+    <script type="module">
+        import { initAuthRedirect } from './auth.js';
+        initAuthRedirect();
+    </script>
+</body>
+</html>
